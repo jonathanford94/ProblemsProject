@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@200&family=Roboto:wght@300&display=swap');
 
-.App{
-  font-family: 'Courier New', 'Roboto', sans-serif, Courier,
+*{
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .header {
@@ -95,6 +95,7 @@ a {
 
 .question pre span{
   color: rgb(21, 182, 21);
+  font-family: monospace;
 }
 
 .question .instruction{
@@ -145,4 +146,56 @@ footer a {
 .portfolioLink::after{
   content: url('../../img/east-24px.svg');
   padding-left: 5px;
+}
+
+@media only screen and (max-width: 560px) {
+  .title{
+    font-size: 26px;
+  }
+
+  .introduction {
+    font-size: 14px;
+    line-height: 20px;
+    width: 90vw;
+    margin-left: 5vw;
+  }
+
+  .nav{
+    width: 80vw;
+    margin-left: 0vw;
+  }
+  
+  .nav li{ 
+    width: 80vw;
+  }
+  
+  .nav li a {
+    font-size: 16px;
+  }
+  
+  .number{
+    font-size: 28px;
+  }
+
+  .question{
+    margin-left: 5vw;
+  }
+
+  .question h1{
+    font-size: 24px;
+  }
+
+  .question pre{
+    width: 85vw;
+  }
+
+  .question input {
+    width: 75vw;
+  }
+
+  footer{
+    margin-left: 5vw;
+    margin-top: 50px;
+    font-size: 14px;
+  }
 }
