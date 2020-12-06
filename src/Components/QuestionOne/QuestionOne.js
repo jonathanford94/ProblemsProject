@@ -28,27 +28,28 @@ class QuestionOne extends React.Component {
                 <h1>Function to multiply by 10</h1>
                 <h4>Question</h4>
                 <pre>{`
-                    function multiplyByTen() {
-                        return num * 10;
-                    }
-                    
-                    // This function should multiply the original number by 10, but has an error
-                    
-                    multiplyByTen(15);
+function multiplyByTen() {
+    return num * 10;
+}
+
+// This function should multiply the original number by 10, but has an error
+
+multiplyByTen(15);
                 `}   
                 </pre>
                 <h4>My Answer</h4>
+                <p>(changes in green)</p>
                 <pre>{`
-                    function multiplyByTen(`}<span>num</span>{`) {
-                        return num * 10;
-                    }
-                    
-                    multiplyByTen(15);
+function multiplyByTen(`}<span>num</span>{`) {
+    return num * 10;
+}
+
+multiplyByTen(15);
                 `}   
                 </pre>
                 <h4>Example of function working</h4>
                 <p className='instruction'>Please input a number to be multiplied by 10</p>
-                <input onChange={this.multiplyByTen}></input>
+                <input onChange={this.multiplyByTen} placeholder="number"></input>
                 <h4>Result</h4>
                 <p className="result">{this.state.result}</p>
             </div>

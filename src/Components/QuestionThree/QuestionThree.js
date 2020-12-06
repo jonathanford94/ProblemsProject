@@ -39,31 +39,32 @@ class QuestionThree extends React.Component {
 
                 <h1>Function to calculate VAT of a price</h1>
                 <h4>Question</h4>
+                <p>(changes in green)</p>
                 <pre>{`
-                    var calculateVAT = {
-                        rate: 0.2,
-                        getVATAmount: function(subTotal) {
-                            return subTotal * rate;
-                        }
-                    }
+var calculateVAT = {
+    rate: 0.2,
+    getVATAmount: function(subTotal) {
+        return subTotal * rate;
+    }
+}
 
-                    // This function should get the VAT amount from the original cost, but has an error
+// This function should get the VAT amount from the original cost, but has an error
 
-                    calculateVAT.getVATAmount(67);
+calculateVAT.getVATAmount(67);
                     `}   
                 </pre>
                 <h4>My Answer</h4>
                 <pre>{`
-                    var calculateVAT = {
-                        rate: 0.2,
-                        getVATAmount: function(subTotal) {
-                            return subTotal * `}<span>this.rate</span>{`;
-                        }
-                    }
-                    
-                    // This function should get the VAT amount from the original cost, but has an error
-                    
-                    calculateVAT.getVATAmount(67);
+var calculateVAT = {
+    rate: 0.2,
+    getVATAmount: function(subTotal) {
+        return subTotal * `}<span>this.rate</span>{`;
+    }
+}
+
+// This function should get the VAT amount from the original cost, but has an error
+
+calculateVAT.getVATAmount(67);
                     `}   
                 </pre>
                 <h4>Example of function working</h4>

@@ -31,27 +31,28 @@ class QuestionFive extends React.Component {
                 <h1>Function to check if a number is divisble by four</h1>
                 <h4>Question</h4>
                 <pre>{`
-                    function goesIntoFour(num) {
-        
-                    }
+function goesIntoFour(num) {
 
-                    // this function should return a boolean, checking if the number is divisble by 4, but is incomplete
+}
 
-                    goesIntoFour(19);
-                    goesIntoFour(20);
+// this function should return a boolean, checking if the number is divisble by 4, but is incomplete
+
+goesIntoFour(19);
+goesIntoFour(20);
                 `}   
                 </pre>
                 <h4>My Answer</h4>
+                <p>(changes in green)</p>
                 <pre>{`
-                    function goesIntoFour(num) {
-                        return `}<span>Boolean(num % 4 === 0);</span>{`
-                    
-                    }
+function goesIntoFour(num) {
+    return `}<span>Boolean(num % 4 === 0);</span>{`
 
-                    // this function should return a boolean, checking if the number is divisble by 4, but is incomplete
-                    
-                    goesIntoFour(19);
-                    goesIntoFour(20);
+}
+
+// this function should return a boolean, checking if the number is divisble by 4, but is incomplete
+
+goesIntoFour(19);
+goesIntoFour(20);
                 `}   
                 </pre>
                 <h4>Example of function working</h4>
